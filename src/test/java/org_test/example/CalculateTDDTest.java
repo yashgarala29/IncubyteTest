@@ -23,4 +23,17 @@ public class CalculateTDDTest {
         Long result=calculateTDDTest.add("1,5");
         assertEquals(6,result);
     }
+    @Test
+    public void test4() {
+        CalculateTDD calculateTDDTest=new CalculateTDD();
+        Long result=calculateTDDTest.add("1\\n2,3");
+        assertEquals(6,result);
+    }
+    @Test
+    public void test5() {
+        CalculateTDD calculateTDDTest=new CalculateTDD();
+        Long result=calculateTDDTest.add("1,\\n");
+        assertEquals(6,result);
+    }
+
 }

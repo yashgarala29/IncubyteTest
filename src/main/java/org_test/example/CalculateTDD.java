@@ -4,7 +4,7 @@ package org_test.example;
 public class CalculateTDD {
 
     public Long add(String s) {
-
+        System.out.println("Input String s"+s);
         String arr[]=s.split(",");
 
         Long sum=0L;
