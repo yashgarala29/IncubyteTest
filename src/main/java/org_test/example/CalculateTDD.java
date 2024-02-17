@@ -1,13 +1,16 @@
 package org_test.example;
 
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class CalculateTDD {
 
-    public Long add(String s) {
+    public String add(String s) {
         System.out.println("Input String s"+s);
+        List<Integer> negative=new ArrayList<>();
         String delimiter=",";
         if (s.length()>2&&s.charAt(0)=='/'&&s.charAt(1)=='/') {
             delimiter = String.valueOf(s.charAt(2));
@@ -19,9 +22,9 @@ public class CalculateTDD {
         String arr[]=s.split(delimiter);
         Long sum=0L;
         for(String x:arr){
-            System.out.println("x"+x);
+
             if(x.equalsIgnoreCase("\\n")){
-                return -1L;
+                return "Invalid Input";
             }
 
             String[] new_x = x.split(Pattern.quote("\\n"));
@@ -30,10 +33,24 @@ public class CalculateTDD {
                     sum+=0;
                     continue;
                 }
+                int t=Integer.parseInt(intrator);;
+                if(t<0){
+                    negative.add(t);
+                    continue;
+
+                }
                 sum+=Integer.parseInt(intrator);
             }
+        }
+        if(negative.size()>0){
+            String ne="negative numbers not allowed";
+            for(Integer nnn:negative){
+                ne+=" "+nnn.toString();
+            }
+            System.out.println(ne);
+            return ne;
 
         }
-        return sum;
+        return Long.toString(sum) ;
     }
 }

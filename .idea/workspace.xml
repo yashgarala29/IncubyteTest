@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cc8b0bc8-5713-4068-ba03-8c23b4d87a6a" name="Changes" comment="\n issue fix">
+    <list default="true" id="cc8b0bc8-5713-4068-ba03-8c23b4d87a6a" name="Changes" comment="task 4 done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org_test/example/CalculateTDD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org_test/example/CalculateTDD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org_test/example/CalculateTDDTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org_test/example/CalculateTDDTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +68,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CalculateTDDTest (1)">
+  <component name="RunManager" selected="JUnit.CalculateTDDTest.test8">
     <configuration name="CalculateTDDTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="incubyte" />
       <extension name="coverage">
@@ -80,15 +79,6 @@
       </extension>
       <option name="PACKAGE_NAME" value="org_test.example" />
       <option name="MAIN_CLASS_NAME" value="org_test.example.CalculateTDDTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CalculateTDDTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="incubyte" />
-      <option name="PACKAGE_NAME" value="org" />
-      <option name="MAIN_CLASS_NAME" value="org.CalculateTDDTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -157,13 +147,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CalculateTDDTest.test8" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="incubyte" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org_test.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org_test.example" />
+      <option name="MAIN_CLASS_NAME" value="org_test.example.CalculateTDDTest" />
+      <option name="METHOD_NAME" value="test8" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CalculateTDDTest.test8" />
         <item itemvalue="JUnit.CalculateTDDTest (1)" />
         <item itemvalue="JUnit.CalculateTDDTest.test7" />
         <item itemvalue="JUnit.CalculateTDDTest.test5" />
         <item itemvalue="JUnit.CalculateTDDTest.test4" />
-        <item itemvalue="JUnit.CalculateTDDTest" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +230,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708155321624</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="task 4 done">
+      <option name="closed" value="true" />
+      <created>1708156293692</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708156293692</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -242,6 +256,7 @@
     <MESSAGE value="empty string validation added" />
     <MESSAGE value="test added" />
     <MESSAGE value="\n issue fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="\n issue fix" />
+    <MESSAGE value="task 4 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="task 4 done" />
   </component>
 </project>
