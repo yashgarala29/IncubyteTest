@@ -9,11 +9,21 @@ public class CalculateTDD {
 
         Long sum=0L;
         for(String x:arr){
-            if(x.isEmpty()){
-                sum+=0;
-                continue;
+            if(x.equalsIgnoreCase("\\n")){
+                return -1L;
             }
-            sum+=Integer.parseInt(x);
+            String slace_n="\\n";
+            String[] new_x =x.split(slace_n);
+
+            for(String intrator:new_x) {
+                System.out.println(intrator);
+                if(intrator.isEmpty()){
+                    sum+=0;
+                    continue;
+                }
+                sum+=Integer.parseInt(intrator);
+            }
+
         }
         return sum;
     }

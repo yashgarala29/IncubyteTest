@@ -30,10 +30,16 @@ public class CalculateTDDTest {
         assertEquals(6,result);
     }
     @Test
+    public void test6() {
+        CalculateTDD calculateTDDTest=new CalculateTDD();
+        Long result=calculateTDDTest.add("3,1\\n2");
+        assertEquals(6,result);
+    }
+    @Test
     public void test5() {
         CalculateTDD calculateTDDTest=new CalculateTDD();
         Long result=calculateTDDTest.add("1,\\n");
-        assertEquals(6,result);
+        assertEquals(-1,result);
     }
 
 }
