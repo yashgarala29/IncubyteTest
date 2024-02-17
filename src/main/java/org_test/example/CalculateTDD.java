@@ -1,6 +1,8 @@
 package org_test.example;
 
 
+import java.util.regex.Pattern;
+
 public class CalculateTDD {
 
     public Long add(String s) {
@@ -12,11 +14,9 @@ public class CalculateTDD {
             if(x.equalsIgnoreCase("\\n")){
                 return -1L;
             }
-            String slace_n="\\n";
-            String[] new_x =x.split(slace_n);
 
+            String[] new_x = x.split(Pattern.quote("\\n"));
             for(String intrator:new_x) {
-                System.out.println(intrator);
                 if(intrator.isEmpty()){
                     sum+=0;
                     continue;
