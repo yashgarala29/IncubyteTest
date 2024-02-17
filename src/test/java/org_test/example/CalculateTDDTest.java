@@ -41,5 +41,11 @@ public class CalculateTDDTest {
         Long result=calculateTDDTest.add("1,\\n");
         assertEquals(-1,result);
     }
+    @Test
+    public void test7() {
+        CalculateTDD calculateTDDTest=new CalculateTDD();
+        Long result=calculateTDDTest.add("//;\\n1;2");
+        assertEquals(3,result);
+    }
 
 }
